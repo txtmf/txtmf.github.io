@@ -1,11 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Hello!</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link href="minty.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 <body>
-	Hello!
+	<nav class="navbar navbar-expand-lg navbar-light bg-primary mb-3">
+		<div class="container justify-content-center">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="navbar-brand" href="./index.html" lang="en">📜 Quizoid 📜</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./html/profile.html">Мій профіль</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./html/about.html">Про додаток</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./html/login.html">Увійти</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./html/sign_up.html">Зареєструватися</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="container my-3">
+		<h1>Опитування</h1>
+		
+		<button class="btn btn-primary">Створити опитування</button>
+
+		<main class="my-3">
+			<ul class="list-group">
+				<li class="list-group-item">
+					<form action="" name="quiz-1">
+						<h2>Хто ви?</h2>
+
+						<hr>
+						
+						<div class="form-check">
+							<input type="radio" id="quiz-1-rg-1-1" name="rg-1" class="form-check-input">
+							<label for="quiz-1-rg-1-1" class="form-check-label">🦆 Качка</label>
+						</div>
+						<div class="form-check">
+							<input type="radio" id="quiz-1-rg-1-2" name="rg-1" class="form-check-input">
+							<label for="quiz-1-rg-1-2" class="form-check-label">🦇 Кажан</label>
+						</div>
+						<div class="form-check">
+							<input type="radio" id="quiz-1-rg-1-3" name="rg-1" class="form-check-input">
+							<label for="quiz-1-rg-1-3" class="form-check-label">🥬 Капуста</label>
+						</div>
+						
+						<hr>
+						
+						<button action="submit" class="btn btn-primary">Відправити</button>
+					</form>
+				</li>
+
+				<li class="list-group-item">
+					<form action="" name="quiz-2">
+						<h2>Коли ви хочете зустрітися?</h2>
+
+						<hr>
+						
+						<div class="form-check">
+							<input type="radio" id="quiz-2-rg-1-1" name="rg-1" class="form-check-input">
+							<label for="quiz-2-rg-1-1" class="form-check-label">15:00</label>
+						</div>
+						<div class="form-check">
+							<input type="radio" id="quiz-2-rg-1-2" name="rg-1" class="form-check-input">
+							<label for="quiz-2-rg-1-2" class="form-check-label">18:00</label>
+						</div>
+						<div class="form-check">
+							<input type="radio" id="quiz-2-rg-1-3" name="rg-1" class="form-check-input">
+							<label for="quiz-2-rg-1-3" class="form-check-label">21:00</label>
+						</div>
+						
+						<hr>
+						
+						<button action="submit" class="btn btn-primary">Відправити</button>
+					</form>
+				</li>
+			</ul>
+		</main>
+	</div>
 </body>
 </html>
