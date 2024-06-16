@@ -6,6 +6,7 @@
     <title>Реєстрація</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link href="../minty.min.css" rel="stylesheet">
+	<link href="../custom.css" rel="stylesheet">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -34,8 +35,8 @@
 	<main class="container">
 		<h1>Реєстрація</h1>
 
-		<div class="row justify-content-center">
-			<form class="col-4">
+		<div id="sign-up" class="row justify-content-center">
+			<form class="col-lg-6">
 				<label for="email" class="">Електронна адреса:</label>
 				<input type="email" id="email" class="form-control">
 
@@ -44,6 +45,22 @@
 
 				<label for="name">Ім'я:</label>
 				<input type="text" id="name" class="form-control">
+
+				<fieldset>
+					<legend class="def-font">Стать:</legend>
+					<div class="form-check form-check-inline">
+						<label for="sex-none" class="form-check-label">Не вказувати</label>
+						<input type="radio" name="sex" id="sex-none" class="form-check-input" value="none" checked>
+					</div>
+					<div class="form-check form-check-inline">
+						<label for="sex-female" class="form-check-label">Жіноча</label>
+						<input type="radio" name="sex" id="sex-female" class="form-check-input" value="female">
+					</div>
+					<div class="form-check form-check-inline">
+						<label for="sex-male" class="form-check-label">Чоловіча</label>
+						<input type="radio" name="sex" id="sex-male" class="form-check-input" value="male">
+					</div>
+				</fieldset>
 
 				<label for="birthdate">Дата народження:</label>
 				<input type="date" id="birthdate" class="form-control">
@@ -54,5 +71,7 @@
 			</form>
 		</div>
 	</main>
+
+	<script type="module" src="../js/main.js"></script>
 </body>
 </html>
